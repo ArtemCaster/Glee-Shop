@@ -7,7 +7,17 @@ const uglify        = require('gulp-uglify');
 const imagemin      = require('gulp-imagemin');
 const del           = require('del');
 const browserSync   = require('browser-sync').create();
+const fileInclude   = require('gulp-file-include');
 
+//includ HTML
+function htmlInclude () {
+  return src(['app/html/*.html'])
+  .pipe(fileInclude({
+    prefix: '@',
+    basepath: '@file'
+  }))
+  .pipe(dest('app'));
+}
 
 //конвертируем и сжимаем файлы из папки scss в папку css
 function styles () {
@@ -66,6 +76,7 @@ function watching () {
   watch(['app/scss/**/*.scss'], styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts());
   watch(['app/**/*.html']).on('change', browserSync.reload);
+  watch(['app/html/**/*.html'], htmlInclude);
 }
 
 function cleanDist () {
@@ -74,7 +85,7 @@ function cleanDist () {
 
 function build () {
   return src([
-    'app/**/*.html',
+    'app/*.html',
     'app/css/style.min.css',
     'app/js/main.min.js',
   ], {base: 'app'})
@@ -88,7 +99,8 @@ exports.browsersync = browsersync;
 exports.watching = watching;
 exports.images = images;
 exports.cleanDist = cleanDist;
+exports.htmlInclude = htmlInclude;
 
 
 exports.build = series(cleanDist, images, build);
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(htmlInclude, styles, scripts, browsersync, watching);
