@@ -2,7 +2,13 @@
 @import 'vars';
 @import 'fonts';
 @import 'global.scss';
-
-
-
 @import 'media.scss';
+
+
+// Компоненты
+@import './components/header.scss';
+@import './components/footer.scss';
+
+
+
+
