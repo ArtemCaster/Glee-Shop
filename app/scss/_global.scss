@@ -1,18 +1,18 @@
 body {
-  @extend %rubik-400;
+  @extend %Rubik-400;
   font-size: 14px;
   line-height: 24px;
   color: $default;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1170px + 15px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .title {
-  @extend %dmsans-700;
+  @extend %DMSans-700;
   font-size: 36px;
   line-height: 1.2;
   color: #1a1a1a;

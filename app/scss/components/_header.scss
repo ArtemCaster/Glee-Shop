@@ -1,0 +1,22 @@
+.header {
+  &__inner {
+    max-width: 1770px + 30px;
+    margin: 0 auto;
+    padding: 45px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__menu-list {
+    display: flex;
+    li {
+      margin-right: 30px;
+    }
+    a {
+      @extend %Rubik-500;
+      font-size: 15px;
+      line-height: 12px;
+      color: #436372;
+    }
+  }
+}
