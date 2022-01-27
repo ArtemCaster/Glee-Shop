@@ -1,6 +1,8 @@
 .header {
   &__inner {
     @extend %main-width;
+    padding-top: 46px;
+    padding-bottom: 47px;
     display: flex;
     justify-content: space-between;
     align-items: center;

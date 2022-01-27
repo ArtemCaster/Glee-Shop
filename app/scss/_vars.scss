@@ -32,9 +32,9 @@ $bg-accent: #fcd7b6;
 
 //наследования
 %main-width {
-  max-width: 1770px + 30px;
+  max-width: 1800px;
   margin: 0 auto;
-  padding: 47px 15px;
+  padding: 0 15px;
 }
 
 %display-center-center {
@@ -46,12 +46,11 @@ $bg-accent: #fcd7b6;
 //кнопка
 %btn{
   @extend %DMSans-400;
-  font-size: 14px;
-  line-height: 100%;
+  font-size: 15px;
   background-color: $accent-gray;
   color: #fff;
   border: none;
-  padding: 14px 16px;
+  padding: 0 16px;
   cursor: pointer;
 }
 
