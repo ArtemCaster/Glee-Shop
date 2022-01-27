@@ -1,0 +1,146 @@
+.top-slider {
+  height: 820px;
+  @extend %main-width;
+  background-image: url(../images/decor/elips.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 83%;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  &__wrapper {
+    padding-top: 216px;
+    background-color: $bg-accent;
+    height: 100%;
+  }
+
+  &__items {
+    height: 559px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__title {
+    @extend %Rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    color: #243f4d;
+    margin-bottom: 26px;
+  }
+
+  &__text {
+    max-width: 359px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #436372;
+    margin-bottom: 36px;
+  }
+
+  &__button {
+    height: 60px;
+    line-height: 60px;
+    @extend %btn;
+    display: block;
+    width: 200px;
+    position: relative;
+    padding-left: 26px;
+
+    &::after {
+      content: "";
+      width: 22px;
+      height: 9px;
+      background-image: url(../images/icon/arrow-rigth.svg);
+      position: absolute;
+      top: 26px;
+      right: 19px;
+    }
+  }
+
+  &__item {
+    &-img {
+      padding-top: 59px;
+    }
+
+    &-content {
+      max-width: 470px;
+    }
+  }
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+
+  & li button {
+    opacity: 0.3;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: all 0.6s;
+    color: #243f4d;
+    font-size: 11px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  & li.slick-active button {
+    opacity: 1;
+  }
+
+  & li:not(:first-child) {
+    margin-left: 11px;
+  }
+}
+
+.top-categories {
+  @extend %main-width;
+
+  &__wrapper {
+    background-color: rgb($bg-accent, 0.2);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+
+  &__items {
+    min-height: 170px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:nth-child(2){
+      border-left: 1px solid rgb(#243f4d, 0.1);
+      border-right: 1px solid rgb(#243f4d, 0.1);
+    }
+
+    &-content{
+      max-width: 270px;
+      padding-left: 20px;
+    }
+  }
+
+  &__title {
+    @extend %DMSans-700;
+    font-size: 18px;
+    color: #414141;
+  }
+
+  &__text {
+    @extend %DMSans-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #585858;
+  }
+}

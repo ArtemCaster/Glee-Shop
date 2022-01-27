@@ -1,10 +1,56 @@
 //цвета
-$accent: #fe3e57;
-$default: #8d8d8d;
-$title: #29282d;
+$default: #7b7b7b;
+$title: #1a1a1a;
+$accent-gray: #a3bbc8;
+$bg-accent: #fcd7b6;
 
-//расширение шрифтов
-// %FontName-400{
-//   font-family: 'Quicksand-Regular', sans-serif;
-//   font-weight: 400;
-// }
+//расширения шрифтов
+%DMSans-700 {
+  font-family: "DMSans-Bold", sans-serif;
+  font-weight: 700;
+}
+%DMSans-500 {
+  font-family: "DMSans-Medium", sans-serif;
+  font-weight: 500;
+}
+%DMSans-400 {
+  font-family: "DMSans-Regular", sans-serif;
+  font-weight: 400;
+}
+%Rubik-500 {
+  font-family: "Rubik-Medium", sans-serif;
+  font-weight: 500;
+}
+%Rubik-400 {
+  font-family: "Rubik-Regular", sans-serif;
+  font-weight: 400;
+}
+%Poppins-700 {
+  font-family: "Poppins-Bold", sans-serif;
+  font-weight: 700;
+}
+
+//наследования
+%main-width {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+%display-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//кнопка
+%btn{
+  @extend %DMSans-400;
+  font-size: 15px;
+  background-color: $accent-gray;
+  color: #fff;
+  border: none;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
