@@ -1,0 +1,46 @@
+.video{
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/video-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @extend %display-center-center;
+
+  &__play{
+    width: 98px;
+    height: 98px;
+    background-color: $accent-gray;
+    border-radius: 50%;
+    @extend %display-center-center;
+    cursor: pointer;
+    
+
+    &-link{
+      display: inherit;
+      position: relative;
+    }
+
+    &::before{
+      content: '';
+      width: 98px;
+      height: 98px;
+      background-color: $accent-gray;
+      border-radius: 50%;
+      position: absolute;
+      opacity: 0.5;
+      animation: play-one  2s infinite;
+    }
+    &::after{
+      content: '';
+      width: 98px;
+      height: 98px;
+      background-color: $accent-gray;
+      border-radius: 50%;
+      position: absolute;
+      opacity: 0.2;
+      animation: play-two  2s infinite;
+    }
+    
+  }
+}

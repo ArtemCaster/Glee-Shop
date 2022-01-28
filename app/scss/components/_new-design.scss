@@ -1,0 +1,50 @@
+.new-design {
+  margin-bottom: 120px;
+  margin-top: 104px;
+
+  &__title {
+    display: block;
+    text-align: center;
+    margin-bottom: 23px;
+  }
+
+  &__items {
+    margin-top: 74px;
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-gap: 34px 30px;
+
+  }
+
+  &__item {
+    height: 246px;
+    padding: 37px 0 0 36px;
+    position: relative;
+
+    &-image{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+    
+    &-inner {
+      max-width: 172px;
+    }
+
+    &-title {
+      @extend %DMSans-700;
+      font-size: 20px;
+      color: #1a1a1a;
+
+      span {
+        display: block;
+        font-size: 16px;
+        color: #a3bbc8;
+        margin-top: 10px;
+      }
+    }
+  }
+}

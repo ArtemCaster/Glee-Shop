@@ -21,4 +21,59 @@ body {
   color: #1a1a1a;
 }
 
+.section-title {
+  @extend %DMSans-700;
+  font-size: 36px;
+  line-height: 100%;
+  color: #191919;
+}
 
+.categories {
+  display: flex;
+  justify-content: center;
+
+  li:not(:first-child) {
+    margin-left: 30px;
+  }
+
+  a {
+    @extend %DMSans-700;
+    font-size: 16px;
+    color: #8b8b8b;
+    line-height: 100%;
+    transition: all 0.5s;
+
+    &:hover {
+      color: #1a1a1a;
+    }
+  }
+}
+
+@keyframes play-one{
+  from {
+    width: 98px;
+    height: 98px;
+  }
+  50% {
+    width: 120px;
+    height: 120px;
+  }
+  to {
+    width: 98px;
+    height: 98px;
+  }
+}
+@keyframes play-two{
+  from {
+    width: 98px;
+    height: 98px;
+  }
+  50% {
+    width: 140px;
+    height: 140px;
+  }
+  to {
+    width: 98px;
+    height: 98px;
+  }
+}
