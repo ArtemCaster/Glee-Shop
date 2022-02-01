@@ -11,7 +11,7 @@
   &__items {
     margin-top: 74px;
     display: grid;
-    grid-template-columns: repeat(3, 370px);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 34px 30px;
 
   }

@@ -14,16 +14,53 @@
 
   &__menu-list {
     display: flex;
+  }
 
-    li {
-      margin-right: 36px;
+  &__menu-item {
+    margin-right: 36px;
+    position: relative;
+    height: 40px;
+    @extend %display-center-center;
+
+    &--down:hover{
+      .header__submenu{
+        left: 0;
+        opacity: 1;
+      }
     }
+  }
 
-    a {
+  &__menu-link {
+    @extend %Rubik-500;
+    font-size: 15px;
+    line-height: 12px;
+    color: #436372;
+  }
+
+  &__submenu {
+    left: -3000px;
+    opacity: 0;
+    background-color: #b6b6b62d;
+    border-radius: 5px;
+    transition: opacity 0.6s;
+    position: absolute;
+    top: 100%;
+    
+    &-link {
       @extend %Rubik-500;
       font-size: 15px;
       line-height: 12px;
       color: #436372;
+      height: 100%;
+      display: block;
+      padding: 20px 10px;
+      transition: all 0.3s;
+      max-width: 300px;
+      min-width: 200px;
+
+      &:hover{
+        background-color: #b6b6b6a9;
+      }
     }
   }
 }
