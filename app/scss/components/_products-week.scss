@@ -3,7 +3,7 @@
 
   &__title {
     text-align: center;
-    margin-bottom: 28px;
+    margin-bottom: 38px;
   }
 
   &__items {
@@ -11,79 +11,5 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px 30px;
-  }
-
-  &__item {
-    max-width: 270px;
-    min-height: 380px;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
-    text-align: center;
-
-    &-image {
-      width: 100%;
-      height: 300px;
-      @extend %display-center-center;
-      position: relative;
-
-      &:hover {
-        .products-week__item-menu {
-          opacity: 1;
-        }
-      }
-
-      img {
-        display: inline-block;
-      }
-    }
-
-    &-menu {
-      position: absolute;
-      display: flex;
-      left: 0px;
-      right: 0px;
-      bottom: 73px;
-      justify-content: center;
-      transition: all 0.5s;
-      opacity: 0;
-    }
-
-    &-serch,
-    &-cart,
-    &-like {
-      @extend %display-center-center;
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      transition: all 0.5s;
-      background-color: #fff;
-      path {
-        transition: all 0.5s;
-      }
-
-      &:hover {
-        background-color: $accent-gray;
-        path {
-          fill: #fff;
-        }
-      }
-    }
-
-    &-cart {
-      margin: 0 16px;
-    }
-
-    &-title,
-    &-price {
-      @extend %DMSans-500;
-      font-size: 16px;
-      line-height: 1;
-      color: #243f4d;
-    }
-    &-price {
-      color: #a3bbc8;
-      margin-top: 16px;
-    }
   }
 }

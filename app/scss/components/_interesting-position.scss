@@ -8,7 +8,8 @@
   }
 
   &__item {
-    height: 390px;
+    min-height: 390px;
+    padding: 15px 0;
     background-color: rgb($bg-accent, 0.4);
   }
 

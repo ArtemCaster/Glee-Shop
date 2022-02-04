@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  @include('components/_header.html')
+  <main>
+
+    <section class="bread-crumbs">
+      <h3 class="bread-crumbs__title">
+        Log in
+      </h3>
+
+      <ul class="bread-crumbs__list">
+        <li class="bread-crumbs__item">
+          <a class="bread-crumbs__link" href="index.html">
+            Home
+          </a>
+        </li>
+        <li class="bread-crumbs__item">
+          <span class="bread-crumbs__link" href="#">
+            Log in
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="login">
+      <div class="container">
+        <form class="login__form" action="#">
+          <label class='login__label'>
+            Username or email address *
+            <input type="text" required>
+          </label>
+          <label class='login__label'>
+            Password
+            <input type="password" required>
+          </label>
+          <button class="login__login-btn">Login</button>
+          <div class="login__block">
+            <label class="login__remember-label">
+              <input type="checkbox">
+              Remember me
+            </label>
+            <a class="login__lost" href="#">Lost your password?</a>
+          </div>
+          <p class="login__register-text">
+            Not registered? No problem
+          </p>
+          <a class="login__register-link" href="#">
+            Create an account
+          </a>
+        </form>
+      </div>
+    </section>
+
+
+    @include('components/_partners.html')
+  </main>
+  @include('components/_footer.html')
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  @include('components/_header.html')
+  <main>
+
+    <section class="bread-crumbs">
+      <h3 class="bread-crumbs__title">
+        Product list 1
+      </h3>
+
+      <ul class="bread-crumbs__list">
+        <li class="bread-crumbs__item">
+          <a class="bread-crumbs__link" href="index.html">
+            Home
+          </a>
+        </li>
+        <li class="bread-crumbs__item">
+          <span class="bread-crumbs__link" href="#">
+            Product list 1
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="shop">
+      <div class="container">
+        <div class="shop__inner">
+
+          <div class="shop-filters">
+
+            <div class="shop-filters__item">
+              <h3 class="shop-filters__title">
+                Category
+              </h3>
+              <div class="categories-filter">
+                <form class="categories-filter__inner" action="#">
+                  <label class="categories-filter__label">
+                    <input class="categories-filter__checkbox" type="checkbox" checked>
+                    <div class="categories-filter__box">
+                      <span class="categories-filter__box-title">Chair</span>
+                      <img class="categories-filter__box-img" src="../images/icon/Shape-right.svg" alt="right arrow">
+                    </div>
+                  </label>
+                  <label class="categories-filter__label">
+                    <input class="categories-filter__checkbox" type="checkbox">
+                    <div class="categories-filter__box">
+                      <span class="categories-filter__box-title">Table</span>
+                      <img class="categories-filter__box-img" src="../images/icon/Shape-right.svg" alt="right arrow">
+                    </div>
+                  </label>
+                  <label class="categories-filter__label">
+                    <input class="categories-filter__checkbox" type="checkbox">
+                    <div class="categories-filter__box">
+                      <span class="categories-filter__box-title">Lamp</span>
+                      <img class="categories-filter__box-img" src="../images/icon/Shape-right.svg" alt="right arrow">
+                    </div>
+                  </label>
+                  <label class="categories-filter__label">
+                    <input class="categories-filter__checkbox" type="checkbox">
+                    <div class="categories-filter__box">
+                      <span class="categories-filter__box-title">Watch</span>
+                      <img class="categories-filter__box-img" src="../images/icon/Shape-right.svg" alt="right arrow">
+                    </div>
+                  </label>
+                  <label class="categories-filter__label">
+                    <input class="categories-filter__checkbox" type="checkbox">
+                    <div class="categories-filter__box">
+                      <span class="categories-filter__box-title">Clock</span>
+                      <img class="categories-filter__box-img" src="../images/icon/Shape-right.svg" alt="right arrow">
+                    </div>
+                  </label>
+                </form>
+              </div>
+            </div>
+
+            <div class="shop-filters__item">
+              <h3 class="shop-filters__title">
+                Price
+              </h3>
+
+              <form class="price-filter" action="#">
+                <input class="price-filter__slider" type="text" data-min="0" data-max="1000" data-from="100"
+                  data-to="500">
+                <div class="price-filter__box">
+                  <p class="price-filter__min-price"><span>$</span></p>
+                  <p class="price-filter__max-price"><span>$</span></p>
+                </div>
+              </form>
+
+            </div>
+
+            <div class="shop-filters__item">
+              <h3 class="shop-filters__title">
+                Brand
+              </h3>
+              <div class="brand-filter">
+                <form class="categories-filter__inner" action="#">
+                  <label class="categories-filter__label">
+                    <input class="categories-filter__checkbox" type="checkbox" checked>
+                    <div class="categories-filter__box">
+                      <span class="categories-filter__box-title">RFL</span>
+                      <p class="categories-filter__box-count">(<span>10</span>)</p>
+                    </div>
+                  </label>
+                  <label class="categories-filter__label">
+                    <input class="categories-filter__checkbox" type="checkbox">
+                    <div class="categories-filter__box">
+                      <span class="categories-filter__box-title">Brothers</span>
+                      <p>(<span>21</span>)</p>
+                    </div>
+                  </label>
+                  <label class="categories-filter__label">
+                    <input class="categories-filter__checkbox" type="checkbox">
+                    <div class="categories-filter__box">
+                      <span class="categories-filter__box-title">Regal</span>
+                      <p>(<span>3</span>)</p>
+                    </div>
+                  </label>
+                  <label class="categories-filter__label">
+                    <input class="categories-filter__checkbox" type="checkbox">
+                    <div class="categories-filter__box">
+                      <span class="categories-filter__box-title">Nadia</span>
+                      <p>(<span>14</span>)</p>
+                    </div>
+                  </label>
+                  <label class="categories-filter__label">
+                    <input class="categories-filter__checkbox" type="checkbox">
+                    <div class="categories-filter__box">
+                      <span class="categories-filter__box-title">Otobi</span>
+                      <p>(<span>6</span>)</p>
+                    </div>
+                  </label>
+                </form>
+              </div>
+            </div>
+
+            <div class="shop-filters__item">
+              <h3 class="shop-filters__title">
+                Recent products
+              </h3>
+              <div class="resent-prodicts">
+                <div class="resent-prodicts__item">
+                  <div class="ware ware--small mix category-furnitures">
+                    @include('components/_product.html')
+                  </div>
+                </div>
+                <div class="resent-prodicts__item">
+                  <div class="ware ware--small mix category-furnitures">
+                    @include('components/_product.html')
+                  </div>
+                </div>
+                <div class="resent-prodicts__item">
+                  <div class="ware ware--small mix category-furnitures">
+                    @include('components/_product.html')
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="shop-content">
+            <div class="shop-content__inner shop-content__inner--grid-3">
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+            </div>
+            <div class="shop-content__tabs">
+              <ul class="shop-content__tabs-items">
+                <li class="shop-content__tabs-item">
+                  <a class="shop-content__tabs-link" href="#">1</a>
+                </li>
+                <li class="shop-content__tabs-item">
+                  <a class="shop-content__tabs-link" href="#">2</a>
+                </li>
+                <li class="shop-content__tabs-item">
+                  <a class="shop-content__tabs-link" href="#">2</a>
+                </li>
+                <li class="shop-content__tabs-item">
+                  <a class="shop-content__tabs-link" href="#">Next</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    @include('components/_partners.html')
+
+  </main>
+  @include('components/_footer.html')
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

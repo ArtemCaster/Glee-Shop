@@ -1,17 +1,16 @@
 .top-slider {
   height: 820px;
   @extend %main-width;
-  background-image: url(../images/decor/elips.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: 83%;
   padding-top: 0;
   padding-bottom: 0;
-
+  
   &__wrapper {
     padding-top: 216px;
     background-color: $bg-accent;
     height: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 84%;
   }
 
   &__items {

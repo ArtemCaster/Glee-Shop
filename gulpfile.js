@@ -38,6 +38,9 @@ function scripts () {
     'node_modules/jquery/dist/jquery.js',  //jqery
     'node_modules/slick-carousel/slick/slick.js', //slick carusel
     'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',  //плагины fancybox
+    'node_modules/mixitup/dist/mixitup.js',  //плагины mixitup
+    'node_modules/ion-rangeslider/js/ion.rangeSlider.js',  //плагины rangeSlider
+    'node_modules/rateyo/src/jquery.rateyo.js',  //плагины rateYo
     'app/js/main.js'
   ])
   .pipe(concat('main.min.js'))
