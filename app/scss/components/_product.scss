@@ -1,0 +1,259 @@
+.ware {
+  width: 100%;
+  height: 500px;
+  display: flex;
+
+  &__image {
+    width: 370px;
+    height: 100%;
+    border: 1px solid #f2f2f2;
+    @extend %display-center-center;
+
+    &-small{
+      display: none;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    
+    &-link{
+      @extend %Rubik-400;
+      font-size: 40px;
+      line-height: 47px;
+      color: #333333;
+    }
+  }
+
+  &__star {
+    margin-bottom: 15px;
+  }
+
+  &__price {
+    font-size: 30px;
+    line-height: 36px;
+    color: #333333;
+    margin-bottom: 15px;
+
+    &-first,
+    &-last {
+      display: none;
+    }
+  }
+
+  &__text {
+    color: #243f4d;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    &-inner {
+      padding-left: 30px;
+      width: 420px;
+    }
+  }
+
+  //small
+  &--small{
+    height: 70px;
+    padding: 3px;
+
+    .ware__image__inner{
+      margin: 3px;
+    }
+
+    .ware__title{
+      margin-bottom: 0;
+    }
+
+    .ware__title-link{
+      font-size: 14px;
+      line-height: 1;
+    }
+
+    .ware__text,
+    .ware-menu{
+      display: none;
+    }
+
+    .ware__price{
+      font-size: 15px;
+      line-height: 20px;
+      margin: 0;
+    }
+
+    .jq-ry-container{
+      padding: 0;
+      margin: 5px 0;
+    }
+
+    .ware__image{
+      width: 70px;
+      height: 70px;
+    }
+
+    .ware__content-inner{
+      height: 70px;
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+  }
+
+  // normal
+
+  &--normal {
+    width: 270px;
+    height: 375px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+
+    &:hover{
+      .ware-menu{
+        opacity: 1;
+      }
+    }
+
+    .ware__image {
+      width: 100%;
+      height: 100%;
+      border: none;
+
+    }
+
+    .ware__image__inner{
+      padding: 40px;
+    }
+
+    .ware__title-link {
+      @extend %DMSans-500;
+      color: #243f4d;
+      font-size: 16px;
+      line-height: 20px;
+      padding-top: 40px;
+    }
+
+    .ware__star,
+    .ware__text {
+      display: none;
+    }
+
+    .ware__price {
+      @extend %DMSans-700;
+      font-size: 16px;
+      line-height: 20px;
+      color: #a3bbc8;
+      margin-bottom: 30px;
+    }
+
+    .ware__price-first,
+    .ware__price-last {
+      display: inline-block;
+    }
+
+    .ware__price-center {
+      display: none;
+    }
+
+    .ware-menu__cart:hover{
+      &::after{
+        display: none;
+      }
+    }
+
+    .ware-menu__serch,
+    .ware-menu__cart,
+    .ware-menu__like {
+      @extend %display-center-center;
+      background-color: #fff;
+      border-radius: 50%;
+      margin-right: 15px;
+      path {
+        fill: rgb(163, 187, 200);
+      }
+
+      &:hover{
+        background-color: #a2bac7;
+        path {
+          fill: #fff;
+        }
+      }
+    }
+    .ware__content-inner{
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .ware-menu{
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      top: 198px;
+      transition: all .10s;
+      opacity: 0;
+    }
+
+  }
+}
+
+.ware-menu {
+  display: flex;
+
+  &__serch,
+  &__cart,
+  &__like {
+    width: 50px;
+    height: 50px;
+    @extend %display-center-center;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    margin-right: 10px;
+    transition: all .10s;
+  }
+
+  &__serch {
+    display: none;
+  }
+
+  &__cart {
+    background-color: #a2bac7;
+    transition: all 0.5s;
+    position: relative;
+    font-size: 15px;
+    color: #fff;
+    
+    path {
+      fill: #fff;
+    }
+    
+    &::after{
+      content: 'ADD TO CART';
+      background-color: #a2bac7;
+      height: 50px;
+      width: 200px;
+      position: absolute;
+      border-radius: 5px;
+      @extend %display-center-center;
+      left: 0;
+      opacity: 0;
+      transition: all 0.3s;
+      display: none;
+    }
+
+    &:hover{
+      &::after{
+        display: flex;
+        opacity: 1;
+      }
+    }
+  }
+}

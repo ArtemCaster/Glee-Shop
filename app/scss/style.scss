@@ -6,6 +6,8 @@
 
 @import '../../node_modules/slick-carousel/slick/slick';
 @import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
+@import '../../node_modules/ion-rangeslider/css/ion.rangeSlider';
+@import '../../node_modules/rateyo/src/jquery.rateyo';
 
 
 // Компоненты
@@ -17,6 +19,12 @@
 @import './components/new-design.scss';
 @import './components/video.scss';
 @import './components/news';
+@import './components/product';
+@import './components/partners';
+@import './components/product-list';
+@import './components/about';
+@import './components/conditions';
+@import './components/login';
 
 
 

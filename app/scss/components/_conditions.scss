@@ -1,0 +1,31 @@
+.conditions{
+  margin: 120px 0;
+
+  &__title{
+    font-size: 24px;
+    color: #243f4d;
+    margin-bottom: 30px;
+    
+    &:not(:first-child){
+      margin-top: 30px;
+    }
+  }
+  
+  &__list{
+    margin-left: 40px;
+    list-style-type: decimal-leading-zero;
+  }
+  
+  &__items{
+    font-size: 16px;
+    color: #243f4d;
+    margin-bottom: 15px;
+    padding-left: 10px;
+  }
+  
+  &__text{
+    font-size: 16px;
+    color: #243f4d;
+  }
+
+}

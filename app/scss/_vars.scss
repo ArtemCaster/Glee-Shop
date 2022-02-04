@@ -37,6 +37,14 @@ $bg-accent: #fcd7b6;
   margin: 0 auto;
 }
 
+%check-none{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
 %display-center-center {
   display: flex;
   align-items: center;

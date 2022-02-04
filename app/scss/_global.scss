@@ -84,3 +84,39 @@ body {
     height: 98px;
   }
 }
+
+.bread-crumbs {
+  padding: 30px 0;
+  background-color: #edf1f4;
+  text-align: center;
+
+  &__title {
+    @extend %Rubik-400;
+    font-size: 34px;
+    color: $title;
+    margin-bottom: 15px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item:not(:first-child) {
+    padding-left: 22px;
+    position: relative;
+
+    &::before {
+      content: "/";
+      position: absolute;
+      left: 8px;
+    }
+  }
+
+  &__link {
+    @extend %Rubik-400;
+    font-size: 14px;
+    list-style: none;
+    color: #888c91;
+  }
+}

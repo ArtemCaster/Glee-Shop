@@ -1,0 +1,11 @@
+.partners-page{
+  background-color: rgb($bg-accent, 0.2);
+  padding: 70px 0;
+
+  &__list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+}
