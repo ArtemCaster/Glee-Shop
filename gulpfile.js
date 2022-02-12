@@ -41,6 +41,7 @@ function scripts () {
     'node_modules/mixitup/dist/mixitup.js',  //плагины mixitup
     'node_modules/ion-rangeslider/js/ion.rangeSlider.js',  //плагины rangeSlider
     'node_modules/rateyo/src/jquery.rateyo.js',  //плагины rateYo
+    'node_modules/jquery-form-styler/dist/jquery.formstyler.js',  //плагины form-stiler
     'app/js/main.js'
   ])
   .pipe(concat('main.min.js'))

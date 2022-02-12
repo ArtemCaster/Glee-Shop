@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  @include('components/_header.html')
+  <main>
+
+    <section class="bread-crumbs">
+      <h3 class="bread-crumbs__title">
+        Product detalis
+      </h3>
+
+      <ul class="bread-crumbs__list">
+        <li class="bread-crumbs__item">
+          <a class="bread-crumbs__link" href="index.html">
+            Home
+          </a>
+        </li>
+        <li class="bread-crumbs__item">
+          <span class="bread-crumbs__link" href="#">
+            Product detalis
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="product-one">
+      <div class="container">
+        <div class="product-one__inner">
+
+          <div class="product-one__content">
+
+            <div class="product-one__slide product-slide">
+      
+              <div class="product-slide__thumb">
+                <div class="product-slide__thumb-item">
+                  <img src="images/imahe-product.png" alt="product image">
+                </div>
+                <div class="product-slide__thumb-item">
+                  <img src="images/imahe-product.png" alt="product image">
+                </div>
+                <div class="product-slide__thumb-item">
+                  <img src="images/imahe-product.png" alt="product image">
+                </div>
+
+              </div>
+
+              <div class="product-slide__big">
+                <div class="product-slide__big-item">
+                  <img src="images/imahe-product.png" alt="product image">
+                </div>
+                <div class="product-slide__big-item">
+                  <img src="images/imahe-product.png" alt="product image">
+                </div>
+                <div class="product-slide__big-item">
+                  <img src="images/imahe-product.png" alt="product image">
+                </div>
+              </div>
+            </div>
+
+            <div class="product-one__description">
+              <h4 class="product-one__title">
+                Pendant lamp
+              </h4>
+              <div class="ware__star" data-rateyo-rating="4"></div>
+              <p class="product-one__price">
+                23$
+              </p>
+              <p class="product-one__text">
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              </p>
+              <div class="product-one__box">
+                <input class="product-one__input" type="number" min="1" value="1">
+                <button class="product-one__btn">Add to cart</button>
+              </div>
+              <ul class="product-one__info">
+                <li class="product-one__info-item">SKU: 014</li>
+                <li class="product-one__info-item">Category: <a href="#">Lights</a></li>
+                <li class="product-one__info-item">Tag: <a href="#">Decorative</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="product-one__tabs">
+            <div class="product-one__tabs-top">
+              <a class="product-one__tabs-item product-one__tabs-item--active" href="#tab-1">Description</a>
+              <a class="product-one__tabs-item" href="#tab-2">Additional information</a>
+              <a class="product-one__tabs-item" href="#tab-3">Reviews (<span>2</span>)</a>
+            </div>
+            <div class="product-one__tabs-content product-one__tabs-content--active" id="tab-1">
+              <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="product-one__tabs-content" id="tab-2">2</div>
+            <div class="product-one__tabs-content" id="tab-3">3</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="related">
+      <div class="container">
+        <div class="related__inner">
+          <div class="related__title">Related products</div>
+          <div class="related__slider">
+            <div class="related__slider-item">
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+            </div>
+            <div class="related__slider-item">
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+            </div>
+            <div class="related__slider-item">
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+            </div>
+            <div class="related__slider-item">
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+            </div>
+            <div class="related__slider-item">
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+            </div>
+            <div class="related__slider-item">
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+            </div>
+            <div class="related__slider-item">
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+            </div>
+            <div class="related__slider-item">
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+            </div>
+            <div class="related__slider-item">
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+            </div>
+            <div class="related__slider-item">
+              <div class="ware ware--normal mix category-furnitures">
+                @include('components/_product.html')
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @include('components/_news.html')
+  </main>
+  @include('components/_footer.html')
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
