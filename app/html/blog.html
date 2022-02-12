@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  @include('components/_header.html')
+  <main>
+
+    <section class="bread-crumbs">
+      <h3 class="bread-crumbs__title">
+        blog
+      </h3>
+
+      <ul class="bread-crumbs__list">
+        <li class="bread-crumbs__item">
+          <a class="bread-crumbs__link" href="index.html">
+            Home
+          </a>
+        </li>
+        <li class="bread-crumbs__item">
+          <span class="bread-crumbs__link" href="#">
+            blog
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="blog">
+      <div class="container">
+        <div class="blog__inner">
+
+          <div class="blog__content">
+            <div class="blog-item">
+              <div class="blog-item__image">
+                <img src="../images/blog/1.jpg" alt="blog image">
+                <div class="blog-item__info">
+                  <div class="blog-item__info-data">
+                    28 JANUARY, 2020
+                  </div>
+                  <a class="blog-item__info-person" href="#">
+                    BY ADMIN
+                  </a>
+                </div>
+              </div>
+              <h4 class="blog-item__title">
+                Fonsectetur adipisicing eiusmod
+              </h4>
+              <p class="blog-item__text">
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              </p>
+              <a class="blog-item__link" href="#">
+                View More
+              </a>
+            </div>
+            <div class="blog-item">
+              <div class="blog-item__image">
+                <img src="../images/blog/2.jpg" alt="blog image">
+                <div class="blog-item__info">
+                  <div class="blog-item__info-data">
+                    28 JANUARY, 2020
+                  </div>
+                  <a class="blog-item__info-person" href="#">
+                    BY ADMIN
+                  </a>
+                </div>
+              </div>
+              <h4 class="blog-item__title">
+                Fonsectetur adipisicing eiusmod
+              </h4>
+              <p class="blog-item__text">
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              </p>
+              <a class="blog-item__link" href="#">
+                View More
+              </a>
+            </div>
+            <div class="blog-item">
+              <div class="blog-item__image">
+                <img src="../images/blog/3.jpg" alt="blog image">
+                <div class="blog-item__info">
+                  <div class="blog-item__info-data">
+                    28 JANUARY, 2020
+                  </div>
+                  <a class="blog-item__info-person" href="#">
+                    BY ADMIN
+                  </a>
+                </div>
+              </div>
+              <h4 class="blog-item__title">
+                Fonsectetur adipisicing eiusmod
+              </h4>
+              <p class="blog-item__text">
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              </p>
+              <a class="blog-item__link" href="#">
+                View More
+              </a>
+            </div>
+            <div class="blog-item">
+              <div class="blog-item__image">
+                <img src="../images/blog/4.jpg" alt="blog image">
+                <div class="blog-item__info">
+                  <div class="blog-item__info-data">
+                    28 JANUARY, 2020
+                  </div>
+                  <a class="blog-item__info-person" href="#">
+                    BY ADMIN
+                  </a>
+                </div>
+              </div>
+              <h4 class="blog-item__title">
+                Fonsectetur adipisicing eiusmod
+              </h4>
+              <p class="blog-item__text">
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              </p>
+              <a class="blog-item__link" href="#">
+                View More
+              </a>
+            </div>
+            <div class="shop-content__tabs tabs">
+              <ul class="shop-content__tabs-items tabs__items">
+                <li class="shop-content__tabs-item">
+                  <a class="shop-content__tabs-link" href="#">1</a>
+                </li>
+                <li class="shop-content__tabs-item">
+                  <a class="shop-content__tabs-link" href="#">2</a>
+                </li>
+                <li class="shop-content__tabs-item">
+                  <a class="shop-content__tabs-link" href="#">2</a>
+                </li>
+                <li class="shop-content__tabs-item">
+                  <a class="shop-content__tabs-link" href="#">Next</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="blog__right">
+            <form class="serch shop-filters__item">
+              <input class="serch__input" type="text">
+              <button class="serch__btn">
+                <img src="../images/icon/Serch.svg" alt="">
+              </button>
+            </form>
+            <div class="shop-filters__item">
+              <h3 class="shop-filters__title">
+                Category
+              </h3>
+              <div class="categories-filter">
+                <form class="categories-filter__inner" action="#">
+                  <label class="categories-filter__label">
+                    <input class="categories-filter__checkbox" type="checkbox" checked>
+                    <div class="categories-filter__box">
+                      <span class="categories-filter__box-title">Chair</span>
+                      <img class="categories-filter__box-img" src="../images/icon/Shape-right.svg" alt="right arrow">
+                    </div>
+                  </label>
+                  <label class="categories-filter__label">
+                    <input class="categories-filter__checkbox" type="checkbox">
+                    <div class="categories-filter__box">
+                      <span class="categories-filter__box-title">Table</span>
+                      <img class="categories-filter__box-img" src="../images/icon/Shape-right.svg" alt="right arrow">
+                    </div>
+                  </label>
+                  <label class="categories-filter__label">
+                    <input class="categories-filter__checkbox" type="checkbox">
+                    <div class="categories-filter__box">
+                      <span class="categories-filter__box-title">Lamp</span>
+                      <img class="categories-filter__box-img" src="../images/icon/Shape-right.svg" alt="right arrow">
+                    </div>
+                  </label>
+                  <label class="categories-filter__label">
+                    <input class="categories-filter__checkbox" type="checkbox">
+                    <div class="categories-filter__box">
+                      <span class="categories-filter__box-title">Watch</span>
+                      <img class="categories-filter__box-img" src="../images/icon/Shape-right.svg" alt="right arrow">
+                    </div>
+                  </label>
+                  <label class="categories-filter__label">
+                    <input class="categories-filter__checkbox" type="checkbox">
+                    <div class="categories-filter__box">
+                      <span class="categories-filter__box-title">Clock</span>
+                      <img class="categories-filter__box-img" src="../images/icon/Shape-right.svg" alt="right arrow">
+                    </div>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <div class="resent-posts shop-filters__item">
+              <h4 class="resent-posts__title shop-filters__title">
+                resent posts
+              </h4>
+              <div class="resent-posts__item">
+                <div class="resent-posts__item-img">
+                  <img src="../images/blog/1.jpg" alt="">
+                </div>
+                <div class="resent-posts__item-content">
+                  <a class="resent-posts__item-title" href="#">
+                    Corem ipsum dolor tetur adipisicing elit
+                  </a>
+                  <div class="resent-posts__item-data">
+                    28 JANUARY, 2020
+                  </div>
+                </div>
+              </div>
+              <div class="resent-posts__item">
+                <div class="resent-posts__item-img">
+                  <img src="../images/blog/2.jpg" alt="">
+                </div>
+                <div class="resent-posts__item-content">
+                  <a class="resent-posts__item-title" href="#">
+                    Corem ipsum dolor tetur adipisicing elit
+                  </a>
+                  <div class="resent-posts__item-data">
+                    28 JANUARY, 2020
+                  </div>
+                </div>
+              </div>
+              <div class="resent-posts__item">
+                <div class="resent-posts__item-img">
+                  <img src="../images/blog/3.jpg" alt="">
+                </div>
+                <div class="resent-posts__item-content">
+                  <a class="resent-posts__item-title" href="#">
+                    Corem ipsum dolor tetur adipisicing elit
+                  </a>
+                  <div class="resent-posts__item-data">
+                    28 JANUARY, 2020
+                  </div>
+                </div>
+              </div>
+              <div class="resent-posts__item">
+                <div class="resent-posts__item-img">
+                  <img src="../images/blog/4.jpg" alt="">
+                </div>
+                <div class="resent-posts__item-content">
+                  <a class="resent-posts__item-title" href="#">
+                    Corem ipsum dolor tetur adipisicing elit
+                  </a>
+                  <div class="resent-posts__item-data">
+                    28 JANUARY, 2020
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    @include('components/_partners.html')
+  </main>
+  @include('components/_footer.html')
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
