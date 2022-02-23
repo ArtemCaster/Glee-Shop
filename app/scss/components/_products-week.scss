@@ -13,3 +13,40 @@
     grid-gap: 40px 30px;
   }
 }
+
+@media (max-width: 1300px){
+  .products-week{
+    &__items{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .ware:nth-child(n+7){
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 920px){
+  .products-week{
+    padding: 67px 0;
+
+    &__items{
+
+      .ware:nth-child(n+5){
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 478px){
+  .categories__btn{
+    font-size: 12px;
+
+    &:not(:first-child){
+      margin-left: 5px;
+    }
+  }
+}

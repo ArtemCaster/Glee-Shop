@@ -48,3 +48,46 @@
     }
   }
 }
+
+
+@media (max-width: 1100px){
+  .new-design{
+    &__items{
+      grid-gap: 20px;
+    }
+
+    &__item{
+      padding: 14px 0 0 14px;
+    }
+  }
+}
+
+@media (max-width: 920px){
+  .new-design{
+    &__items{
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__item{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 175px;
+    }
+
+    &__item-image{
+      background-color: #f8f8f8;
+      img{
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 478px){
+  .new-design{
+    &__items{
+      grid-template-columns: 1fr;
+    }
+  }
+}

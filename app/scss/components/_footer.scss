@@ -99,3 +99,26 @@
   }
 }
 
+
+@media (max-width: 920px){
+  .footer-top{
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 560px){
+  .footer-bottom{
+    flex-direction: column;
+    align-items: center;
+
+    &__menu{
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 390px){
+  .footer-bottom-copy{
+    font-size: 10px;
+  }
+}

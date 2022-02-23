@@ -286,3 +286,102 @@
     }
   }
 }
+
+
+@media (max-width: 1300px){
+  .progress{
+    &__image{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1100px){
+  .team{
+    margin-top: 80px;
+
+    &__inner{
+      flex-direction: column;
+    }
+
+    &__content{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 1100px){
+  .team{
+    &__person{
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 700px){
+  .progress{
+    &__advantages{
+      flex-wrap: wrap;
+      justify-content: left;
+    }
+
+    &__advantages-item{
+      margin-bottom: 30px;
+      
+      &:nth-child(2),
+      &:nth-child(3){
+        border: none;
+      }
+    }
+
+    &__items-list{
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
+
+    &__item{
+      margin: 120px 20px 45px;
+    }
+  }
+}
+
+@media (max-width: 560px){
+  .progress{
+    &__count-number{
+      font-size: 100px;
+      margin-right: 18px;
+    }
+
+    &__content{
+      padding-left: 0;
+    }
+
+    &__content-title{
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    &__advantages::before{
+      width: 240px;
+    }
+  }
+}
+
+@media (max-width: 478px){
+  .team{
+    &__person-item{
+      width: 100%;
+      background-size: cover;
+    }
+
+    &__person-about{
+      padding: 10px;
+      width: 240px;
+    }
+
+    &__person-text{
+      font-size: 12px;
+    }
+  }
+
+}

@@ -321,3 +321,41 @@
     text-transform: uppercase;
   }
 }
+
+@media (max-width: 560px){
+  .blog-info__img{
+    display: none;
+  }
+
+  .comments-item__img{
+    display: none;
+  }
+
+  .comments-form{
+
+    &__top{
+      flex-direction: column;
+      height: auto;
+    }
+
+    &__label-box{
+      height: 45px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .blog-details__content{
+    blockquote{
+      padding: 18px 16px 20px 30px;
+    }
+  }
+}
+
+@media (max-width: 390px){
+  .blog-info__inner{
+    flex-direction: column;
+  }
+  .blog-info__author{
+    margin-bottom: 20px;
+  }
+}
