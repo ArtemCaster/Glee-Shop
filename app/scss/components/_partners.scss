@@ -7,5 +7,19 @@
     justify-content: space-around;
     align-items: center;
   }
+}
 
+@media (max-width: 920px){
+  .partners-page{
+  
+    &__list{
+      flex-wrap: wrap;
+
+      img{
+        margin: 20px;
+      }
+    }
+
+
+  }
 }
